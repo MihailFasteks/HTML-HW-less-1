@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+    border: 1px solid black;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    height: 70vh;
+    
+}
+header, footer{
+    height: 15vh;
+    background-color: @myColor;
+}
+section{
+// height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: @newColor;
+border: 1px solid black;
+width: 70%;
+}
+aside{
+    width: 30%;
+    background-color: @newColor+50;
+    // height: auto;
+}
+@myColor: blue;
+@newColor: @myColor+100;
+
+.photo{
+    width: 20vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
